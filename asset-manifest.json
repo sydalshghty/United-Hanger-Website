@@ -1,20 +1,18 @@
 {
   "files": {
-    "main.css": "/United-Hanger-Website/static/css/main.7f4ac957.css",
-    "main.js": "/United-Hanger-Website/static/js/main.91ef178a.js",
-    "static/media/home (15).png": "/United-Hanger-Website/static/media/home (15).fe27b2ef45747f1b75d2.png",
-    "static/media/home (14).png": "/United-Hanger-Website/static/media/home (14).2c75931afc3b6d9aef6c.png",
+    "main.css": "/United-Hanger-Website/static/css/main.30b62737.css",
+    "main.js": "/United-Hanger-Website/static/js/main.6bd30d2d.js",
+    "static/media/home (24).png": "/United-Hanger-Website/static/media/home (24).2a60b2a6558548b8d783.png",
+    "static/media/home (22).png": "/United-Hanger-Website/static/media/home (22).bd0ae196fb1414c8638e.png",
     "static/media/products.png": "/United-Hanger-Website/static/media/products.5d6704d1747665feabfd.png",
-    "static/media/home (21).png": "/United-Hanger-Website/static/media/home (21).3b88620ec1d892b31be4.png",
-    "static/media/home (13).png": "/United-Hanger-Website/static/media/home (13).24ec01c6c92886b1dbe9.png",
     "static/media/PRODUCT (12).png": "/United-Hanger-Website/static/media/PRODUCT (12).4d52909e78104eb3d39e.png",
-    "static/media/home (16).png": "/United-Hanger-Website/static/media/home (16).afe9e6b32114d63f489b.png",
+    "static/media/home (35) - Copy.png": "/United-Hanger-Website/static/media/home (35) - Copy.f10c6451b9585b9393ea.png",
+    "static/media/home (23).png": "/United-Hanger-Website/static/media/home (23).360d60908eaeba9db5c3.png",
+    "static/media/home (30)_cleanup (2).png": "/United-Hanger-Website/static/media/home (30)_cleanup (2).c46a302bb9bf1682d507.png",
     "static/media/products (1).png": "/United-Hanger-Website/static/media/products (1).9e0682cd3f0bcf578bee.png",
     "static/media/PRODUCT (2) (3).png": "/United-Hanger-Website/static/media/PRODUCT (2) (3).67f8d8a02216ae66c7d2.png",
-    "static/media/home (17).png": "/United-Hanger-Website/static/media/home (17).98a82210410bd1f2208a.png",
     "static/media/PRODUCT__1_-removebg-preview.png": "/United-Hanger-Website/static/media/PRODUCT__1_-removebg-preview.8fa01a84a7b2efef3a62.png",
     "static/media/PRODUCT.png": "/United-Hanger-Website/static/media/PRODUCT.ef7471e132af3cd80454.png",
-    "static/media/home__18_-removebg-preview.png": "/United-Hanger-Website/static/media/home__18_-removebg-preview.2a827a9f2c2bcacc3dc0.png",
     "static/media/Vector Smart Object-ai (1)-svg (1).svg": "/United-Hanger-Website/static/media/Vector Smart Object-ai (1)-svg (1).3116a0592b747eb1dc126fa81ed9acd0.svg",
     "static/media/products__2_-removebg-preview.png": "/United-Hanger-Website/static/media/products__2_-removebg-preview.17154a9e1972a849e584.png",
     "static/media/PRODUCT (13)_LE_auto_x2_LE_auto_x2.webp": "/United-Hanger-Website/static/media/PRODUCT (13)_LE_auto_x2_LE_auto_x2.f2796bdcea3b8d5c160e.webp",
@@ -22,11 +20,11 @@
     "static/media/PRODUCT (9)_LE_auto_x2_LE_auto_x2.webp": "/United-Hanger-Website/static/media/PRODUCT (9)_LE_auto_x2_LE_auto_x2.8d3a3da81e398d2aa1c7.webp",
     "static/media/PRODUCT (11) (1)_LE_auto_x2_LE_auto_x2.webp": "/United-Hanger-Website/static/media/PRODUCT (11) (1)_LE_auto_x2_LE_auto_x2.f8da169d660aa829a344.webp",
     "index.html": "/United-Hanger-Website/index.html",
-    "main.7f4ac957.css.map": "/United-Hanger-Website/static/css/main.7f4ac957.css.map",
-    "main.91ef178a.js.map": "/United-Hanger-Website/static/js/main.91ef178a.js.map"
+    "main.30b62737.css.map": "/United-Hanger-Website/static/css/main.30b62737.css.map",
+    "main.6bd30d2d.js.map": "/United-Hanger-Website/static/js/main.6bd30d2d.js.map"
   },
   "entrypoints": [
-    "static/css/main.7f4ac957.css",
-    "static/js/main.91ef178a.js"
+    "static/css/main.30b62737.css",
+    "static/js/main.6bd30d2d.js"
   ]
 }
