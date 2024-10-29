@@ -31,3 +31,6 @@
     color: var(--color-text-form);
     line-height: 1.6;
 }
+.address-content-mobile .address-mobile-one p:nth-child(5){
+    cursor: pointer;
+}

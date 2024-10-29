@@ -2,13 +2,13 @@ import "../CSS/header.css";
 import { useRef, useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import imgOne from "../images/home (14).png";
-import imgTwo from "../images/home (15).png";
-import imgThree from "../images/home (16).png";
+import imgSlideOne from "../images/home (22).png";
+import imgSlideTwo from "../images/home (24).png";
+import imgHome23 from "../images/home (23).png";
 
 function Header(){
     const [activeIndex, setActiveIndex] = useState(0);
-    const images = [imgOne, imgTwo];
+    const images = [imgSlideOne, imgSlideTwo];
 
     const handleLeftClick = () => {
         setActiveIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
@@ -50,10 +50,9 @@ function Header(){
         <div className="header">
             <div className="container">
                 <div className="text-content">
-                    <p className="p-one">CUSTOM MADE HANGERS</p>
+                    <p className="p-one">a style in every hang</p>
                     <div className="paragraphs">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
-                        <p>sed do eiusmod tempor incididunt ut labore et dolore</p>
+                        <p>extensive product range caters to various sectors of the clothing industry, including babywear, kid's wear, teenage wear, lingerie,men's and women's wear.</p>
                     </div>
                 </div>
                 <div className="icons" ref={myIcons}>
@@ -78,20 +77,22 @@ function Header(){
                     <h3>about us ?</h3>
                     <div className="p-one-content">
                             <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                united hanger company is proud to serve as a trusted partner to clothing manufacturers across the middle east and europe.
                             </p>
-                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            <p>
+                                we are committed to excellence in every aspect of our business, and we look forward to bringing your clothing creations to life with our premium hanger solution.
+                            </p>
                     </div>
                 </div>
                 <div className="img-about">
-                    <img src= { imgThree } alt="img-about"/>
+                    <img src= { imgHome23 } alt="img-about"/>
                 </div>
             </div>
             <div className="about-mobile">
                 <div className="container">
                     <h3>about us ?</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <p className="p-two">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <p>united hanger company is proud to serve as a trusted partner to clothing manufacturers across the middle east and europe.</p>
+                    <p className="p-two"> we are committed to excellence in every aspect of our business, and we look forward to bringing your clothing creations to life with our premium hanger solution.</p>
                 </div>
             </div>
         </div>

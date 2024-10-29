@@ -1,11 +1,11 @@
 import "../CSS/services.css";
-import myImgOne from "../images/home (17).png";
-import myImgTwo from "../images/home__18_-removebg-preview.png";
+import myImgOne from "../images/home (35) - Copy.png";
+
+
 function Services(){
     return(
         <div className="services">
-            <img className="img-one" src= {myImgOne} alt="img-one"/>
-            <img className="img-two" src= {myImgTwo} alt="img-two"/>
+                <img className="img-product" src={myImgOne} alt="img" />
                 <div className="services-content">
                     <div className="heading-services">
                         <h1>services</h1>

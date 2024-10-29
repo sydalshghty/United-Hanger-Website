@@ -5,26 +5,30 @@
 .services{
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 850px;
     margin-bottom: -9px;
 }
-.services .img-one{
+.services img{
     position: absolute;
     width: 100%;
-    height: 70%;
+    height: 100%;
 }
-.services .img-two{
+.services .img-background{
     position: absolute;
-    width: 900px;
+    width: 100%;
+    height: 100%;
+}
+.services .img-background .img-product{
+    width: 500px;
     height: 100%;
     right: 0;
-    z-index: 15;
+    z-index: 1000;
 }
 .services .services-content{
     position: absolute;
     width: calc(100% - 120px);
-    z-index: 10;
-    margin-top: 135px;
+    z-index: 1;
+    margin-top: 245px;
     margin-left: 120px;
 }
 .services .services-content .heading-services{
@@ -91,20 +95,12 @@
     background-color: var(--text-color);
 }
 @media (max-width: 992px){
-    .services .img-two{
-        width: 700px;
-    }
     .services .services-content .content-text p{
         margin-right: 80px;
         width: 55%;
     }
 }
 @media (max-width: 992px){
-    .services .img-two{
-        position: absolute;
-        width: 100%;
-        z-index: 5;
-    }
     .services .services-content{
         width: 100%;
         margin-left: 0;
@@ -132,6 +128,20 @@
     }
 }
 @media (max-width: 768px){
+        .services {
+                height: 620px;
+            }
+            .services .services-content {
+                margin-top: 95px;
+            }
+        
+            .services .services-content .content-text {
+                height: 220px;
+            }
+        
+            .services .services-content .content-text p {
+                margin-top: 20px;
+            }
     .services .img-two{
         z-index: 15;
     }
@@ -145,11 +155,11 @@
 @media (max-width: 550px){
     .services{
         position: relative;
-        height: 55vh;
+        height: 500px;
     }
     .services .services-content{
         position: absolute;
-        bottom: 0;
+        margin-top: 115px;
     }
     .services .img-two{
         z-index: 5;
@@ -166,12 +176,13 @@
         height: 1px;
     }
     .services .services-content .content-text{
-        height: 160px;
+        height: 180px;
         padding-top: 40px;
     }
     .services .services-content .content-text p{
         width: 100%;
         margin-right: 20px;
+        margin-top: 20px;
         font-size: 13px;
     }
 }
