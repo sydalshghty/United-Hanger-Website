@@ -5,12 +5,13 @@
     --background-p-two: #f1f1f1;
 }
 .products-home{
-    height: 100vh;
+    height: 900px;
     width: 100%;
     margin-top: -116px;
     position: relative;
 }
 .products-home img{
+    position: absolute;
     width: 100%;
     height: 100%;
 }
@@ -21,7 +22,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-height: 250px;
+    height: 280px;
     text-transform: uppercase;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
@@ -31,14 +32,15 @@
     background-color: var(--background-p-two);
     text-align: start;
     writing-mode: vertical-rl;
-    height: 200px;
-    font-size: 17px;
+    height: 280px;
+    font-size: 25px;
     color: var(--color-text-hangur);
     background-color: var(--background-p-two);
     border-right: 1px solid var(--border-color-hangur);
-    width: 70px;
+    width: 100px;
     display: flex;
     align-items: center;
+    cursor: pointer;
     transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
@@ -46,10 +48,44 @@
     -o-transform: rotate(180deg);
     -webkit-writing-mode: vertical-rl;
     -ms-writing-mode: vertical-rl;
+    transition: background-color 0.5s ease, height 0.5s ease, width 0.5s ease;
+    -webkit-transition: background-color 0.5s ease, height 0.5s ease, width 0.5s ease;
+    -moz-transition: background-color 0.5s ease, height 0.5s ease, width 0.5s ease;
+    -ms-transition: background-color 0.5s ease, height 0.5s ease, width 0.5s ease;
+    -o-transition: background-color 0.5s ease, height 0.5s ease, width 0.5s ease;
+}
+@media (min-width: 768px){
+    .products-home .container .p-one:hover {
+            background-color: var(--background-p-one);
+            height: 280px;
+            width: 380px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-left: 1px solid var(--color-text-hangur);
+            writing-mode: unset;
+            -webkit-writing-mode: unset;
+            -ms-writing-mode: unset;
+            transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+        }
+}
+@media (min-width: 768px) and (max-width: 992px){
+    .products-home .container .p-one:hover{
+        width: 250px;
+        font-size: 20px;
+        text-align: center;
+    }
 }
 .products-home .container .p-hangers{
     background-color: var(--background-p-one);
-    height: 200px;
+    cursor: pointer;
+    font-size: 25px;
+    height: 280px;
+    width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,30 +93,56 @@
     padding-right: 30px;
     color: var(--color-text-hangur);
     border-right: 1px solid var(--border-color-hangur);
+    transition: height 0.5s ease, width 0.5s ease;
+    -webkit-transition: height 0.5s ease, width 0.5s ease;
+    -moz-transition: height 0.5s ease, width 0.5s ease;
+    -ms-transition: height 0.5s ease, width 0.5s ease;
+    -o-transition: height 0.5s ease, width 0.5s ease;
+}
+@media (min-width: 768px){
+    .products-home .container .p-hangers.hovered {
+            padding: 20px;
+            background-color: var(--background-p-two);
+            text-align: start;
+            writing-mode: vertical-rl;
+            height: 280px;
+            font-size: 25px;
+            color: var(--color-text-hangur);
+            background-color: var(--background-p-two);
+            border-right: 1px solid var(--border-color-hangur);
+            width: 100px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transform: rotate(180deg);
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            -webkit-writing-mode: vertical-rl;
+            -ms-writing-mode: vertical-rl;
+        }
 }
 @media (max-width: 768px){
-    .products-home .container .p-hangers{
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-}
-@media (max-width: 550px){
     .products-home{
-        margin-bottom: 200px;
+        height: 800px;
     }
     .products-home .container{
-        position: absolute;
-        left: 0;
+        height: 250px;
     }
     .products-home .container .p-one{
-        height: 220px;
-        width: 50px;
+        height: 250px;
+        width: 80px;
+        font-size: 22px;
     }
     .products-home .container .p-hangers{
+        font-size: 22px;
+        padding-left: 15px;
+        padding-right: 15px;
         justify-content: flex-start;
         padding-top: 20px;
-        height: 220px;
-        width: 50px;
+        height: 250px;
+        width: 80px;
         writing-mode: vertical-rl;
         -webkit-writing-mode: vertical-rl;
         -ms-writing-mode: vertical-rl;
@@ -91,8 +153,158 @@
         -o-transform: rotate(180deg);
 }
 }
-@media (max-width: 520px){
+@media (max-width: 550px){
     .products-home{
-        height: 680px;
+        margin-bottom: 200px;
     }
+    .products-home .container{
+        position: absolute;
+        left: 0;
+    }
+}
+@media (max-width: 450px){
+    .products-home{
+        height: 700px;
+    }
+    .products-home .container{
+        height: 200px;
+    }
+    .products-home .container .p-one,
+    .products-home .container .p-hangers{
+        height: 200px;
+        width: 50px;
+        font-size: 17px;
+    }
+}
+.products-home .all-Accessories,
+.products-home .top-Hangers,
+.products-home .bottom-Hangers,
+.products-home .JACKET-SUIT,
+.products-home .kIDSWEAR-Hangers,
+.products-home .bABYWEAR-Hangers{
+    position: absolute;
+    z-index: 100;
+    bottom: 300px;
+    width: 250px;
+    height: fit-content;
+    background-color: var(--background-p-one);
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0;
+    padding-top: 15px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    transition: opacity 0.5s ease;
+    -webkit-transition: opacity 0.5s ease;
+    -moz-transition: opacity 0.5s ease;
+    -ms-transition: opacity 0.5s ease;
+    -o-transition: opacity 0.5s ease;
+}
+.products-home .bABYWEAR-Hangers{
+    margin-left: 500px;
+}
+.products-home .kIDSWEAR-Hangers{
+    left: 0;
+    margin-left: 400px;
+}
+.products-home .JACKET-SUIT{
+    left: 0;
+    margin-left: 300px;
+}
+.products-home .bottom-Hangers{
+    left: 0;
+    margin-left: 200px;
+}
+.products-home .top-Hangers{
+    left: 0;
+    margin-left: 100px;
+}
+.products-home .all-Accessories{
+    right: 0;
+    margin-right: 100px;
+}
+.products-home .all-Accessories.access,
+.products-home .top-Hangers.topHanger,
+.products-home .bottom-Hangers.bottomHanger,
+.products-home .JACKET-SUIT.jacketSuit,
+.products-home .kIDSWEAR-Hangers.kIDSWEAR,
+.products-home .bABYWEAR-Hangers.bABYWEAR{
+    opacity: 1;
+}
+@media (max-width: 1200px){
+    .products-home .top-Hangers{
+        margin-left: 20px;
+    }
+    .products-home .all-Accessories{
+        margin-right: 20px;
+    }
+    .products-home .bottom-Hangers{
+        margin-left: 20px;
+    }
+    .products-home .JACKET-SUIT{
+        margin-left: 100px;
+    }
+    .products-home .kIDSWEAR-Hangers{
+        margin-left: 200px;
+    }
+    .products-home .bABYWEAR-Hangers{
+        margin-left: 350px;
+    }
+    
+}
+@media (max-width: 768px){
+    .products-home .all-Accessories,
+    .products-home .top-Hangers,
+    .products-home .bottom-Hangers,
+    .products-home .JACKET-SUIT,
+    .products-home .kIDSWEAR-Hangers,
+    .products-home .bABYWEAR-Hangers{
+        bottom: 280px;
+    }
+}
+@media (max-width: 650px){
+    .products-home .bABYWEAR-Hangers {
+            margin-left: 150px;
+        }
+}
+@media (max-width: 450px){
+    .products-home .all-Accessories,
+    .products-home .top-Hangers,
+    .products-home .bottom-Hangers,
+    .products-home .JACKET-SUIT,
+    .products-home .kIDSWEAR-Hangers,
+    .products-home .bABYWEAR-Hangers{
+        bottom: 220px;
+        width: 200px;
+    }
+    .products-home .kIDSWEAR-Hangers{
+        margin-left: 100px;
+    }
+}
+.products-home .all-Accessories p,
+.products-home .top-Hangers p,
+.products-home .bottom-Hangers p,
+.products-home .JACKET-SUIT p,
+.products-home .kIDSWEAR-Hangers p,
+.products-home .bABYWEAR-Hangers p{
+    text-transform: uppercase;
+    color: var(--color-text-hangur);
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--border-color-hangur);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+.products-home .all-Accessories p:last-child,
+.products-home .top-Hangers p:last-child,
+.products-home .bottom-Hangers p:last-child,
+.products-home .JACKET-SUIT p:last-child,
+.products-home .kIDSWEAR-Hangers p:last-child,
+.products-home .bABYWEAR-Hangers p:last-child{
+    border: none;
 }
