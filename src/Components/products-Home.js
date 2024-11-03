@@ -1,5 +1,5 @@
 import "../CSS/products-home.css";
-import productsImg from "../images/products (3).png";
+import productsImg from "../images/products (4).png";
 import { useState } from "react";
 function ProductsHome() {
     const [hovered, setHovered] = useState(false);
