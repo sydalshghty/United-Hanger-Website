@@ -1,5 +1,5 @@
 import "../CSS/footer-product-only.css";
-import imgProduct from "../images/PRODUCT (12).png";
+import imgProduct from "../images/PRODUCT (15).png";
 function FooterProductOnly(){
     return(
         <div className="footer-product-only">

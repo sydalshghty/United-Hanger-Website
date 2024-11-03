@@ -7,58 +7,51 @@ import imgTwo from "../images/PRODUCT (9)_LE_auto_x2_LE_auto_x2.webp";
 import imgThree from "../images/PRODUCT (10) (1)_LE_auto_x2_LE_auto_x2.webp";
 import imgFour from "../images/PRODUCT (11) (1)_LE_auto_x2_LE_auto_x2.webp";
 import { useState } from "react";
-function ProductOnlyThree(){
-    const [mainImg, setImgMain] = useState(mainImgProduct);
-   function changeMainImgOne(){
-    setImgMain(imgOne)
-   }
-   function changeImgTwo(){
-    setImgMain(imgTwo);
-   }
-   function changeImgThree(){
-    setImgMain(imgThree);
-   }
-   function changeImgFour(){
-    setImgMain(imgFour);
-   }
+function ProductOnlyThree() {
+    
+    const allImagesProduct = [
+        mainImgProduct,
+        imgOne,
+        imgTwo,
+        imgThree,
+        imgFour
+    ]
+
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    //console.log(allImagesProduct[currentIndex])
+
+    const handleNext = () => {
+        if (currentIndex === 4) {
+            return false;
+        } else {
+            setCurrentIndex(currentIndex + 1)
+        }
+    }
+
+    const handlePrev = () => {
+        if (currentIndex === 0) {
+            return false;
+        } else{
+            setCurrentIndex(currentIndex - 1);
+        }
+    }
     return(
         <div className="product-only-three">
             <div className="content-products">
                 <div className="product-img-one">
-                    <img
-                    src={mainImg} 
-                    alt="product-img-one"
-                    />
+                    <img src={allImagesProduct[currentIndex]} alt="product-img-one"/>
                 </div>
                 <div className="product-img-two">
-                    <img
-                    onClick={changeMainImgOne}  
-                    src={imgOne} 
-                    alt="product-one"
-                    />
-                    <img
-                    onClick={changeImgTwo} 
-                    src={imgTwo} 
-                    alt="product-two"
-                    />
-                    <img
-                    onClick={changeImgThree} 
-                    src={imgThree} 
-                    alt="product-three"
-                    />
-                    <img
-                    onClick={changeImgFour} 
-                    src={imgFour} 
-                    alt="product-four"
-                    />
+                    <img src={imgOne} alt="product-one"/>
+                    <img src={imgTwo} alt="product-two"/>
+                    <img src={imgThree} alt="product-three"/>
+                    <img src={imgFour} alt="product-four"/>
                 </div>
             </div>
             <div className="button-icons">
-                <FontAwesomeIcon
-                className="icon-left" 
-                icon={faArrowLeft}
-                />
-                <FontAwesomeIcon className="icon-right" icon={faArrowRight}/>
+                <FontAwesomeIcon onClick={handlePrev} className="icon-left" icon={faArrowLeft}/>
+                <FontAwesomeIcon onClick={handleNext} className="icon-right" icon={faArrowRight}/>
             </div>
         </div>
     )

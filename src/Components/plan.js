@@ -11,7 +11,9 @@ const center = {
     lat: 53.54,
     lng: 10
 }
-function Plan(){
+function Plan() {
+
+
     return(
         <div className="plan-content">
             <LoadScript googleMapsApiKey="AIzaSyBWB1JR4gnnhypAmwDFckN0anoRUTH5SAY">
